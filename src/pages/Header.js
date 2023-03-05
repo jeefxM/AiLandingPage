@@ -1,21 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import RedditIcon from "@mui/icons-material/Reddit";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleMenuClick = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className="">
-      <header className="flex justify-between items-center text-white p-10 max-md:flex-col ">
+      <header className="flex justify-between items-center text-white p-10 max-md:flex-col">
         <div className="">
-          <div className="font-bold text-xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
+          <div className="font-bold text-2xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
             Serendale
           </div>
         </div>
-        <div>
-          <ul className="flex-row flex gap-7 max-md:flex-col max-md:pt-10 items-center">
+        <div className="flex-row flex gap-7 max-md:flex-col max-md:pt-10 items-center max-md:text-sm">
+          <ul
+            className={
+              showMenu
+                ? "flex flex-row gap-5 max-md:flex-col items-center"
+                : "hidden md:flex gap-5"
+            }
+          >
             <li>Smart Contracts</li>
             <li>Services</li>
             <li>Solutions</li>
@@ -24,6 +37,15 @@ const Header = () => {
           </ul>
         </div>
         <div className="flex gap-3 max-md:mt-10">
+          <IconButton
+            aria-label="Menu"
+            size="small"
+            onClick={handleMenuClick}
+            className="md:hidden absolute top-10 left-5"
+          >
+            <MenuIcon fontSize="medium" sx={{ color: "white" }} />
+          </IconButton>
+
           <IconButton
             aria-label="GitHubIcon"
             size="small"

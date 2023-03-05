@@ -32,7 +32,7 @@ const Main = () => {
         </div>
         <div className="flex gap-3 ">
           <button
-            className="text-white p-3 rounded-[40px]"
+            className="text-white p-3 rounded-[40px] "
             style={{
               background:
                 "linear-gradient(#000000, #000000) padding-box, linear-gradient(to right, #FF3BFF, #ECBFBF, #5C24FF, #D94FD5) border-box",
