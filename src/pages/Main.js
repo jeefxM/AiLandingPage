@@ -24,7 +24,7 @@ const Main = () => {
           <p className="text-white text-6xl max-md:text-2xl">Scalable AI.</p>
         </div>
         <div className="pt-5">
-          <p className="text-white max-w-[600px] text-xl max-md:text-xs max-md:mx-20">
+          <p className="text-white max-w-[600px] text-xl max-md:text-sm max-md:mx-20">
             Our technology performing fast blockchain (120K TPS) and it has
             guaranteed AI-based data security. Proof of Stake, its consensus
             algorithm enables unlimited speeds.
@@ -32,7 +32,7 @@ const Main = () => {
         </div>
         <div className="flex gap-3 ">
           <button
-            className="text-white p-3 rounded-[40px] "
+            className="text-white p-3 rounded-[40px] max-md:text-sm max-md:p-2"
             style={{
               background:
                 "linear-gradient(#000000, #000000) padding-box, linear-gradient(to right, #FF3BFF, #ECBFBF, #5C24FF, #D94FD5) border-box",
@@ -42,7 +42,7 @@ const Main = () => {
             Get Started
           </button>
           <button
-            className="text-white p-3 rounded-[40px]"
+            className="text-white p-3 rounded-[40px] max-md:text-sm max-md:p-2"
             style={{
               background:
                 "linear-gradient(#000000, #000000) padding-box, #fff border-box",
