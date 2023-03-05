@@ -4,12 +4,11 @@ import Header from "./Header";
 const Main = () => {
   return (
     <div
-      className="bg-[#000000] min-h-screen duration-300"
+      className="bg-[#000000] min-h-screen duration-300 max-lg:bg-contain"
       style={{
         backgroundImage: "url('Looper3.png')",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom",
-        backgroundSize: "contain",
         transition: "visibility 2s linear 0.5s",
       }}
     >

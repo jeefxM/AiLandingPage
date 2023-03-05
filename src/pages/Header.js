@@ -5,6 +5,7 @@ import RedditIcon from "@mui/icons-material/Reddit";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "next/link";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,9 +18,12 @@ const Header = () => {
     <div className="">
       <header className="flex justify-between items-center text-white p-10 max-md:flex-col">
         <div className="">
-          <div className="font-bold text-2xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
+          <Link
+            href="/"
+            className="font-bold text-2xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"
+          >
             Serendale
-          </div>
+          </Link>
         </div>
         <div className="flex-row flex gap-7 max-md:flex-col max-md:pt-10 items-center max-md:text-sm">
           <ul
