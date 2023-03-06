@@ -16,7 +16,10 @@ import GitHub from "@mui/icons-material/GitHub";
 
 const SmartContracts = () => {
   return (
-    <div className="min-h-screen bg-[#000010] snap-start flex flex-row items-center align-middle justify-center gap-10 px-56 max-lg:px-10 max-lg:flex-col">
+    <div
+      id="SmartContracts"
+      className="min-h-screen bg-[#000010] snap-start flex flex-row items-center align-middle justify-center gap-10 px-56 max-lg:px-10 max-lg:flex-col"
+    >
       <div className="">
         <AttentionSeeker
           effect={"pulse"}

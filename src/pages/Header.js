@@ -5,7 +5,7 @@ import RedditIcon from "@mui/icons-material/Reddit";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -33,7 +33,10 @@ const Header = () => {
                 : "hidden md:flex gap-5"
             }
           >
-            <li>Smart Contracts</li>
+            <Link to="SmartContracts" smooth={true} duration={500}>
+              <button>Smart Contracts</button>
+            </Link>
+
             <li>Services</li>
             <li>Solutions</li>
             <li>Roadmap</li>
