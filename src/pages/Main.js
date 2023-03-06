@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import Header from "./Header";
 
 const Main = () => {
@@ -9,13 +10,12 @@ const Main = () => {
         backgroundImage: "url('Looper3.png')",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom",
-        transition: "visibility 2s linear 0.5s",
       }}
     >
       <Header />
-      <main className="flex flex-col items-center pt-16 gap-5 max-md:mb-20">
+      <Fade className="flex flex-col items-center pt-16  max-md:pt-4">
         <div>
-          <p className=" text-7xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 max-md:text-4xl ">
+          <p className=" text-7xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 max-md:text-4xl max-md:pt-10">
             A Fast Blockchain{" "}
           </p>
         </div>
@@ -29,7 +29,7 @@ const Main = () => {
             algorithm enables unlimited speeds.
           </p>
         </div>
-        <div className="flex gap-3 ">
+        <div className="flex gap-3 max-md:mb-40">
           <button
             className="text-white p-3 rounded-[40px] max-md:text-sm max-md:p-2"
             style={{
@@ -51,7 +51,7 @@ const Main = () => {
             Ecosystems
           </button>
         </div>
-      </main>
+      </Fade>
     </div>
   );
 };
