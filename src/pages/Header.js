@@ -22,7 +22,7 @@ const Header = () => {
             href="/"
             className="font-bold text-2xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"
           >
-            Serendale
+            TsrediAI
           </Link>
         </div>
         <div className="flex-row flex gap-7 max-md:flex-col max-md:pt-10 items-center max-md:text-sm">

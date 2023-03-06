@@ -70,8 +70,8 @@ const SmartContracts = () => {
             </p>
 
             <button class="bg-purple-500 p-3 mt-3 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded flex gap-2">
-              <GitHub />
               Contracts
+              <GitHub />
             </button>
           </AttentionSeeker>
         </div>
